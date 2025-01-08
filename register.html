@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: red;
+            padding: 20px;
+        }
+
+        .container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color:black;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: yellow;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            color:yellowgreen;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body style="background-image: url('https://aacu.imgix.net/content/user-photos/Offices/OCPI/OCPI_Hero_2.jpg?auto=compress%2Cformat&crop=focalpoint&cs=srgb&fit=crop&fp-x=0.5&fp-y=0.5&h=680&q=80&w=1548');">
+
+    <div class="container">
+        <h2>Course Registration</h2>
+
+        <form id="registrationForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username">
+                <span id="usernameError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+                <span id="passwordError" class="error"></span>
+            </div>
+            <div class="input-group">
+                <label for="username">Conform password</label>
+                <input type="text" id="username" name="username" placeholder="conform password">
+                <span id="usernameError" class="error"></span>
+            </div>
+            <div class="input-group">
+                <label for="username">Email</label>
+                <input type="email" id="username" name="username" placeholder="Enter Email">
+                <span id="usernameError" class="error"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="course">Select Course</label>
+                <select id="course" name="course">
+                    <option value="">Choose a course</option>
+                    <option value="math101">Python</option>
+                    <option value="cs101">Java Full Stack</option>
+                    <option value="history101">Data Science</option>
+                </select>
+                <span id="courseError" class="error"></span>
+            </div>
+
+        <a href="login.html"><input type="button" value="submit" name="" style="color: black;">submit</a>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting immediately
+
+            // Clear previous error messages
+            document.getElementById('usernameError').textContent = '';
+            document.getElementById('passwordError').textContent = '';
+            document.getElementById('courseError').textContent = '';
+
+            // Get form values
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const course = document.getElementById('course').value;
+
+            let isValid = true;
+
+            // Validate username
+            if (username === '') {
+                document.getElementById('usernameError').textContent = 'Username is required.';
+                isValid = false;
+            }
+
+            // Validate password
+            if (password === '') {
+                document.getElementById('passwordError').textContent = 'Password is required.';
+                isValid = false;
+            } else if (password.length < 6) {
+                document.getElementById('passwordError').textContent = 'Password must be at least 6 characters long.';
+                isValid = false;
+            }
+            //validate email
+            if (email === '') {
+                document.getElementById('passwordError').textContent = 'Password is required.';
+                isValid = false;
+            } else if (email.length < 6) {
+                document.getElementById('passwordError').textContent = 'Password must be at least 6 characters  and @ symbol and one special character one lower case one upper case and number at least one long.';
+                isValid = false;
+            }
+
+            // Validate course selection
+            if (course === '') {
+                document.getElementById('courseError').textContent = 'Please select a course.';
+                isValid = false;
+            }
+
+            // If all validations pass, show success message
+            if (isValid) {
+                alert('Registration successful!\n' +
+                    'Username: ' + username + '\n' +
+                    'Course: ' + course);
+                // Optionally, reset the form
+                document.getElementById('registrationForm').reset();
+            }
+        });
+    </script>
+
+</body>
+</html>

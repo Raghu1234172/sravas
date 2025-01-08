@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-Learning website </title>
+	<link rel="shortcut icon" href="./images/Symbol.jpg" type="image/svg+xml">
+	<link rel="stylesheet" type="text/css" href="E_Learning.css">
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/09d6742ceb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!---start header---->
+	<header>
+		<a href="#" class="logo">
+			<img src="elearning-removebg-preview.png" >
+		</a>
+
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#categories">Categories</a></li>
+			<li><a href="#courses">Courses</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#quiz">Quiz</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="register.html">Register</a></li>
+		</ul>
+
+		<div class="header-icons">
+			<a href="#"><i class='bx bx-user'></i></a>
+			<a href="#"><i class='bx bx-heart' ></i></a>
+			<a href="#"><i class='bx bx-cart' ></i></a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+
+	<!---start home section---->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h6>Best online learning platform</h6>
+			<h1>E-Learning doesn't just "happen"! It requires careful planning and implementation.</h1>
+			<p>Let's grow Together, Learn Together.</p>
+			<div class="latter">
+				<form>
+					<input type="email" placeholder="Write Your Email" required>
+				</form>
+			</div>
+		</div>
+
+		<div class="home-img">
+			<img src="https://png.pngtree.com/background/20230424/original/pngtree-dark-image-of-a-female-writing-with-glasses-picture-image_2456014.jpg" >
+		</div>
+	</section>
+
+	<!---start container section---->
+	<section class="container">
+		<div class="container-box">
+			<div class="container-text">
+				<h4>50.20K</h4>
+				<p>Students Enrolled</p>
+			</div>
+		</div>
+		<div class="container-box">
+			<div class="container-text">
+				<h4>55k</h4>
+				<p>Certified Students</p>
+			</div>
+		</div>
+		<div class="container-box">
+			<div class="container-text">
+				<h4>500+</h4>
+				<p>Top Instructors</p>
+			</div>
+		</div>
+		<div class="container-box">
+			<div class="container-text">
+				<h4>8K+</h4>
+				<p>Online Courses</p>
+			</div>
+		</div>
+
+	</section>
+
+	<!---start categories section---->
+	<section class="categories" id="categories">
+		<div class="center-text">
+			<h5>CATEGORIES</h5>
+			<h2>Popular Categories</h2>
+		</div>
+
+		<div class="categories-content">
+			<div class="box">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnbdO_ivw62Cbi5o6wktvj8UhtV21FsoE9Zg&s">
+				<h3>Java Development</h3>
+				<p>40+ Courses</p>
+			</div>
+
+			<div class="box">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvTkivmMxqIRktMuvfaa4j4W2AYjKkxgg18A&s">
+				<h3>Python Development</h3>
+				<p>35+ Courses</p>
+			</div>
+
+			<div class="box">
+				<img src="data:image/png;base64,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">
+				<h3>React js Development</h3>
+				<p>25+ Courses</p>
+			</div>
+		</div>
+
+		<div class="main-btn">
+			<a href="#" class="btn">All Categories</a>
+		</div>
+	</section>
+
+	<!---start course section---->
+	<section class="courses" id="courses">
+		<div class="center-text">
+			<h5>COURSES</h5>
+			<h2>Popular Courses</h2>
+		</div>
+
+		<div class="courses-content">
+			<div class="row">
+				<img src="https://images.unsplash.com/photo-1649180556628-9ba704115795?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHl0aG9uJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D">
+				<div class="courses-text">
+					<h3>The Complete python Bootcamp from Zero to Hero</h3>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<img src="https://www.naukri.com/campus/career-guidance/wp-content/uploads/2024/07/what-is-machine-learning.jpg">
+				<div class="courses-text">
+					<h3>The Complete Machine Learning Course A-Z</h3>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<img src="https://st3.depositphotos.com/4035913/14609/v/450/depositphotos_146093241-stock-illustration-js-golden-letter-logo-design.jpg">
+				<div class="courses-text">
+					<h3>Complete javascript course for beginners</h3>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="https://codeit.com.np/storage/01JDPEGMADNJ4ZKN4S8T5BFWRA.png">
+				<div class="courses-text">
+					<h3>React-The complete Guide(include Hooks,React Router,Redux)</h3>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="main-btn">
+			<a href="#" class="btn">Buy Now</a>
+		</div>
+	</section>
+
+	<!---Try for Free section---->
+	<section class="courses" id="courses">
+		<div class="center-text">
+			<h5>TRY FOR FREE</h5>
+			<h2>Our Free Courses</h2>
+		</div>
+
+		<div class="courses-content">
+			<div class="row">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/aGr0QQc4bX4?si=IqUvFWqcOKpZB5My" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				allowfullscreen></iframe>
+				<div class="courses-text">
+					<h3>JAVA Full stack developer course</h3>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_uQrJ0TkZlc" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				allowfullscreen></iframe>
+				<div class="courses-text">
+					<h3>Python Full stack developer course 2023</h3>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/FhU7k_ol458?si=frmP2mzean7Ywm5l" 
+				title="YouTube video player" frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				allowfullscreen></iframe>
+				<div class="courses-text">
+					<h3>Data Science Road map</h3>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZzaPdXTrSb8?si=1nVpx1TXrG1cZv07" 
+				title="YouTube video player" 
+				frameborder="0"
+				 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				 allowfullscreen></iframe>
+				<div class="courses-text">
+					<h3>Artificial Intelligence 2023</h3>
+					<div class="rating">
+						<div class="star">
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+							<a href="#"><i class='bx bxs-star' ></i></a>
+						</div>
+						<div class="review">
+							<p>{5 Reviews}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		<div class="main-btn">
+			<a href="#" class="btn">Show more</a>
+		</div>
+	</section>
+	<!-- Quiz Section -->
+	<section id="quiz">
+		
+		<div class="quiz">
+			<h2>Quiz</h2>
+			<button onclick="loadQuiz('python')">Python Quiz</button>
+			<button onclick="loadQuiz('java')">Java Quiz</button>
+			<button onclick="loadQuiz('data science')">Data Science</button>
+			<button onclick="loadQuiz('ai')">Artificial Intelligence</button>
+		</div>
+		
+		
+		<div id="quiz-container">
+			<div id="quiz-question"></div>
+			<div id="quiz-options"></div>
+			<div id="quiz-progress"></div>
+		  </div>
+		  
+		<div id="quiz-container">
+		  <p id="quiz-question"></p>
+		  
+		  <p id="quiz-result"></p>
+		  
+		</div>
+		<button id="next-question" onclick="nextQuestion()" style="display:none;">Next Question</button>
+		<button id="try-again" onclick="tryAgain()" style="display:none;">Try Again</button>
+	  </section>
+	
+	  <section class="cta">...</section>
+	  <section class="contact" id="contact">...</section>
+	  <div class="last-text">...</div>
+	
+	  <!-- Scripts -->
+	  <script type="text/javascript" src="quiz.js"></script>
+	</body>
+	</html>
+	
+
+	<!---start cta section---->
+	<section class="cta">
+		<div class="center-text">
+			<h5>Trusted By</h5>
+			<h2>500+ Leading Universities And Companies</h2>
+		</div>
+
+		<div class="cta-content">
+			<div class="cta-img">
+				<img src="https://res.cloudinary.com/db1v2vkbf/image/upload/v1688207826/cta1_pirmec.png">
+			</div>
+
+			<div class="cta-img">
+				<img src="https://res.cloudinary.com/db1v2vkbf/image/upload/v1688207886/cta2_t3iai7.png">
+			</div>
+
+			<div class="cta-img">
+				<img src="https://res.cloudinary.com/db1v2vkbf/image/upload/v1688207886/cta2_t3iai7.png">
+			</div>
+
+			<div class="cta-img">
+				<img src="https://res.cloudinary.com/db1v2vkbf/image/upload/v1688207984/cta3_fgmrzi.png">
+			</div>
+
+			<div class="cta-img">
+				<img src="https://res.cloudinary.com/db1v2vkbf/image/upload/v1688207984/cta4_k6b7jf.png">
+			</div>
+		</div>
+	</section>
+
+	<!---start contact section---->
+
+	<section class="contact" id="contact">
+		<div class="main-contact">
+			<div class="contact-content">
+
+				<img src="">
+			</div>
+			<div>
+				<h2 style="color: black;text-align: center;">contact</h2>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#home">Home</a></li>
+			  <li><a href="#categories">Categories</a></li>
+			  <li><a href="#courses">Courses</a></li>
+			  <li><a href="about.html">About Us</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">Profile</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="about.html">Instructor</a></li>
+				<li><a href="#">Dashboard</a></li>
+			</div>
+
+			<div class="contact-content">
+				<li><a href="#">West godavari<br>Andhra pradesh</a></li>
+				<li><a href="#">E-Learning@gmail.com</a></li>
+				<li><a href="#">+91-9887754666</a></li>
+			</div>
+
+		</div>
+	</section>
+
+	<div class="last-text">
+		<div>
+            <i class="fa fa-instagram" aria-hidden="true" ></i>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+	</div>
+
+	<!---custom js link---->
+	<script type="text/javascript" src="E_Learning.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>
